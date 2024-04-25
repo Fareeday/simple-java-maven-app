@@ -14,7 +14,7 @@ node {
     //    always {
     //         junit 'target/surefire-reports/*.xml'
     //           }
-          }
+    //      }
    stage ('Deliver') {
        echo 'Hello World!'
                      }
