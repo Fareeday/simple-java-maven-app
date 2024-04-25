@@ -3,7 +3,8 @@ node {
      git 'https://github.com/Fareeday/simple-java-maven-app.git'
   }
    stage ('Compile-Package') {
-     sh 'mvn -B -DskipTests clean package'
+     def mvnHome = tool name: 'Maven 4.0.0-alpha-13', type: 'maven'
+     sh '${mvnHome}/bin/mvn package'
   }
 }
 
