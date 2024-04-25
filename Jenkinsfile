@@ -1,12 +1,8 @@
-pipeline {
-    agent any
-    stages {
-        stage('Build') { 
-            steps {
-              def mvnHome = tool name: 'Maven 4.0.0-alpha-13', type: 'maven'
-              sh "${mvnHome}/bin/mvn package"
-            }
-        }
-    }
+node {
+   stage ('SCM Checkout') {
+     git 'https://github.com/Fareeday/simple-java-maven-app.git'
+  }
+
 }
+
 
