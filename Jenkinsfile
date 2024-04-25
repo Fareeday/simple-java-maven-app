@@ -16,6 +16,6 @@ node {
                }
           }
    stage ('Deliver') {
-       echo "Hello World!"
+       echo 'Hello World!'
                      }
      } 
