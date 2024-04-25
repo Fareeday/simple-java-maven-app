@@ -16,6 +16,6 @@ node {
     //           }
     //      }
    stage ('Deliver') {
-       echo 'Hello World!'
+       sh './jenkins/scripts/deliver.sh'
                      }
      } 
