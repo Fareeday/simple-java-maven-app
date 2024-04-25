@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh '${mvnHome}/bin/mvn -B -DskipTests clean package'
+                sh 'cd /opt/simple-java-maven-app && sudo -u root mvn -B -DskipTests clean package'
             }
         }
     }
