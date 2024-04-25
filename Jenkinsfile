@@ -4,8 +4,8 @@ pipeline {
     agent any
     stages {
         stage('Build') { 
-            withMaven(maven: 'mvn') {
-                sh 'mvn -B -DskipTests clean package' 
+            steps {
+                sh "${mvnHome}/bin/mvn -B -DskipTests clean package"
             }
         }
     }
