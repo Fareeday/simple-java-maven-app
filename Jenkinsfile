@@ -19,5 +19,3 @@ node {
      sh "./jenkins/scripts/deliver.sh"
                      }
      }
-
-
